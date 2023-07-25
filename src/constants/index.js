@@ -23,10 +23,12 @@ import {
   movie,
   nyeusi,
   space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
+  clover,
+  pronto,
+  twentyThree,
+  twentyThreeLogo,
+  prontoLogo,
+  cloverLogo,
 } from '../assets';
 
 export const navLinks = [
@@ -37,6 +39,10 @@ export const navLinks = [
   {
     id: 'projects',
     title: 'Projects',
+  },
+  {
+    id: 'work',
+    title: 'Experience',
   },
   {
     id: 'contact',
@@ -54,11 +60,7 @@ const services = [
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
-    icon: ux,
-  },
-  {
-    title: 'Software Prototyping',
+    title: 'Mobile Developer',
     icon: prototyping,
   },
 ];
@@ -97,10 +99,6 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
     name: 'graphql',
     icon: graphql,
   },
@@ -113,10 +111,6 @@ const technologies = [
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
-  },
-  {
     name: 'docker',
     icon: docker,
   },
@@ -124,40 +118,34 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'Software Engineer',
+    company_name: 'Clover Network',
+    icon: cloverLogo,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'May 2021 - Present',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'Software Engineer',
+    company_name: 'Pronto AI',
+    icon: prontoLogo,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Mar 2020 - April 2021',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Software Engineer',
+    company_name: '23AndMe',
+    icon: twentyThreeLogo,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'February 2019 - February 2020',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Sales Report',
+    description:
+      'Clover Network is a company that provides a POS cloud platform for restaurants and retail stores. Sales Tracking and Reporting uses Clover’s powerful analytics tools to gain real-time insights into the sales trends and data.',
     tags: [
       {
         name: 'react',
@@ -172,15 +160,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: clover,
+    repo: '',
+    demo: 'https://www.clover.com/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
-    description:
-      'A leaderboard list app that displays scores submitted by different players.',
+    name: 'Pronto',
+    description: `The Pronto Mobile App was developed as part of Pronto AI's self-driving truck technology. It aimed to provide a user-friendly interface for truck drivers and fleet managers to interact with the autonomous driving system`,
     tags: [
       {
         name: 'react',
@@ -195,59 +182,15 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: pronto,
+    repo: '',
+    demo: 'https://pronto.ai/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: '23andMe',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'The 23andMe Mobile App aimed to provide users with a personalized and interactive experience for accessing and exploring their genetic and health-related information.',
     tags: [
       {
         name: 'nextjs',
@@ -262,9 +205,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: twentyThree,
+    repo: '',
+    demo: 'https://apps.apple.com/us/app/23andme-dna-testing/id952516687',
   },
 ];
 

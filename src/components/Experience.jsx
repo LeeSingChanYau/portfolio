@@ -37,14 +37,16 @@ const ExperienceCard = ({ experience }) => (
           className="w-[60%] h-[60%] object-contain"
         />
       </div>
-    }>
+    }
+  >
     <div>
       <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
         {experience.title}
       </h3>
       <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-        style={{ margin: 0 }}>
+        className="text-taupe text-[22px] font-semibold font-beckman tracking-[1px]"
+        style={{ margin: 0 }}
+      >
         {experience.company_name}
       </p>
     </div>
@@ -68,7 +70,7 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             contentStyle={{
               background: '#eaeaec',
               color: '#292929',
@@ -90,7 +92,8 @@ const Experience = () => {
                   className="w-[45%] h-[45%] object-contain"
                 />
               </div>
-            }>
+            }
+          >
             <button
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
@@ -115,7 +118,8 @@ const Experience = () => {
                 document
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
-              }}>
+              }}
+            >
               MY RESUME
               <img
                 src={download}
@@ -124,7 +128,7 @@ const Experience = () => {
                 w-[23px] h-[23px] object-contain"
               />
             </button>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
         </VerticalTimeline>
       </div>
     </>
