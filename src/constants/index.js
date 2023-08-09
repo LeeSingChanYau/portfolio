@@ -136,7 +136,7 @@ const experiences = [
     company_name: '23AndMe',
     icon: twentyThreeLogo,
     iconBg: '#333333',
-    date: 'February 2019 - February 2020',
+    date: 'February 2018 - February 2020',
   },
 ];
 
